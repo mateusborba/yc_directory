@@ -32,5 +32,9 @@ export const author = defineType({
       type: "text",
     }),
   ],
-  preview: { select: { tile: "name" } },
+  preview: {
+    select: {
+      title: "name",
+    },
+  },
 });
