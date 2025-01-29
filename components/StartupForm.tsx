@@ -16,8 +16,10 @@ export const StartupForm = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [pitch, setPitch] = useState<string>("");
 
+  
   const { toast } = useToast();
   const router = useRouter();
+
 
   const handleFormSubmit = async (prevState: any, formData: FormData) => {
     try {
